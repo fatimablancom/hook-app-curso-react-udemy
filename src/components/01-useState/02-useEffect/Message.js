@@ -1,11 +1,28 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 export const Message = () => {
 
+    const [coords, setCoords] = useState({
+        x: 0,
+        y: 0
+    })
+
+    const {x, y} = coords;
+
+    const mouseMove = (e)=> {
+        const coordsEvent = {
+            x: e.x,
+            y: e.y
+        };
+
+        setCoords(coordsEvent)
+    } 
+
     useEffect(() => {
-      console.log('componente montado')
+      window.addEventListener('mousemove', mouseMove);
     
       return () => {
+        window.removeEventListener('mousemove', mouseMove)
         console.log('componente desmontado')
       }
     }, [])
@@ -13,6 +30,8 @@ export const Message = () => {
   return (
     <div>
         <h3>Hola desde componente Message</h3>
+        <p>X:{x}</p>
+        <p>Y:{y}</p>
     </div>
   )
 }
