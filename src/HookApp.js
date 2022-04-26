@@ -11,6 +11,7 @@ export const HookApp = () => {
         <CounterWithCustomHook />
         <hr/>
         <SimpleForm />
+        <hr/>
     </>
 
   )
