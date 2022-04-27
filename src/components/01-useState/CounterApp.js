@@ -22,8 +22,8 @@ export const CounterApp = () => {
 
   return (
     <>
-    <h1> Counter1 {counter1}</h1>
-    <h1> Counter2 {counter2}</h1>
+    <h4> Counter1 {counter1}</h4>
+    <h4> Counter2 {counter2}</h4>
 
     <button className='btn btn-primary' onClick={() => {handleSum()}}>+1</button>
     </>

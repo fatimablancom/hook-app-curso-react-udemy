@@ -13,7 +13,7 @@ export const MultipleCustomHooks = () => {
 
   return (
     <>
-        <h1>Component: MultipleCustomHooks</h1>
+        <h2>Component: MultipleCustomHooks</h2>
 
         {loading ? 
         

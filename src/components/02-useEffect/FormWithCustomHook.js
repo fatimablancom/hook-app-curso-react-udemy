@@ -24,7 +24,7 @@ export const FormWithCustomHook = () => {
     
   return (
       <form onSubmit={handleSubmit}>
-        <h1>FormWithCustomHook</h1>
+        <h2>FormWithCustomHook</h2>
 
         <div className='form-group'>
             <input 
