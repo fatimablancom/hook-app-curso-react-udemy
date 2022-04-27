@@ -32,7 +32,7 @@ export const MultipleCustomHooks = () => {
             </blockquote>)
         }
 
-        <button className='btn btn-primary' onClick={() => {increment(1)}}>
+        <button style={{marginRight: '20px'}} className='btn btn-primary' onClick={() => {increment(1)}}>
             Siguiente quote
         </button>
         

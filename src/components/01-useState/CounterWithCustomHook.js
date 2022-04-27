@@ -4,11 +4,11 @@ import './index.css';
 
 export const CounterWithCustomHook = () => {
 
-    const { state, increment, decrement, reset } = useCounter(0);
+    const { counter, increment, decrement, reset } = useCounter(0);
     
   return (
     <>
-        <h2>Counter With Custom Hook: {state}</h2>
+        <h2>Counter With Custom Hook: {counter}</h2>
         <div className="button-container">
           <button className='btn btn-secondary' onClick={ () => {increment(1)}}>+1</button>
           <button className='btn btn-secondary' onClick={reset}>Reset</button>
