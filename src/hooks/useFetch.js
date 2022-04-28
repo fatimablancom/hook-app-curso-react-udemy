@@ -36,14 +36,12 @@ export const useFetch = (url) => {
     
                 }, 4000);
 
-                console.log(data, 'data')
+                // console.log(data, 'data')
                
             })
 
     
     }, [url])
-
-    console.log(state, 'state en useFetch')
 
     return state;
 }
